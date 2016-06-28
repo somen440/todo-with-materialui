@@ -1,21 +1,29 @@
 {
-  "name": "redux-todos-example",
-  "version": "0.0.0",
-  "description": "Redux Todos example",
+  "name": "todo-with-materialui",
+  "version": "1.0.0",
+  "description": "react, redux, material-ui",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
-    "start": "node server.js",
-    "test": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register --require ./test/setup.js",
-    "test:watch": "npm test -- --watch"
+    "test": "mocha",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/reactjs/redux.git"
+    "url": "git+https://github.com/mentol0126/todo-with-materialui.git"
   },
-  "license": "MIT",
+  "keywords": [
+    "react",
+    "redux",
+    "material-ui"
+  ],
+  "author": "Somen",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/reactjs/redux/issues"
+    "url": "https://github.com/mentol0126/todo-with-materialui/issues"
   },
-  "homepage": "http://redux.js.org",
+  "homepage": "https://github.com/mentol0126/todo-with-materialui#readme",
   "dependencies": {
     "babel-polyfill": "^6.3.14",
     "react": "^0.14.7",
