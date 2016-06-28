@@ -1,25 +1,12 @@
-import React from 'react';
-import AppBar from 'material-ui/AppBar';
-import IconButton from 'material-ui/IconButton';
-import NavigationClose from 'material-ui/svg-icons/navigation/close';
-import FlatButton from 'material-ui/FlatButton';
-
-function handleTouchTap() {
-  alert('onTouchTap triggered on the title component');
-}
-
-const styles = {
-  title: { cursor: 'pointer', },
-};
+import React from 'react'
+import AppBar from 'material-ui/AppBar'
+import HeaderIcon from '../containers/HeaderIcon'
 
 const Header = () => (
   <AppBar
-    style={styles.header}
-    title={<span style={styles.title}>Title</span>}
-    onTitleTouchTap={handleTouchTap}
-    iconElementLeft={<IconButton><NavigationClose /></IconButton>}
-    iconElementRight={<FlatButton label="Save" />}
+    title="Todo"
+    iconElementLeft={<HeaderIcon />}
   />
-);
+)
 
-export default Header;
+export default Header
