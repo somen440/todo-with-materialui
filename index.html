@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <title>Redux Todos example</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1"
+    />
+    <style>
+      html { font-family: 'Roboto', sans-serif; }
+      body {
+        margin: 0;
+        font-size: 13px;
+        line-height: 20px;
+      }
+    </style>
   </head>
   <body>
     <div class="todoapp" id="root">
     </div>
+    <script>
+      var WebFontConfig = {
+        google: { families: [ 'Roboto:400,300,500:latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
     <script src="/static/bundle.js"></script>
   </body>
 </html>
