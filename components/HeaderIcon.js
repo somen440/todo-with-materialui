@@ -3,6 +3,7 @@ import IconButton from 'material-ui/IconButton';
 import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
 import MenuIcon from 'material-ui/svg-icons/navigation/menu';
+import FilterLink from '../containers/FilterLink'
 
 const HeaderIcon = () => (
   <IconMenu
@@ -10,9 +11,21 @@ const HeaderIcon = () => (
     anchorOrigin={{horizontal: 'left', vertical: 'top'}}
     targetOrigin={{horizontal: 'left', vertical: 'top'}}
   >
-    <MenuItem primaryText="All" />
-    <MenuItem primaryText="Active" />
-    <MenuItem primaryText="Completed" />
+    <MenuItem>
+      <FilterLink filter="SHOW_ALL">
+        All
+      </FilterLink>
+    </MenuItem>
+    <MenuItem>
+      <FilterLink filter="SHOW_ACTIVE">
+        Active
+      </FilterLink>
+    </MenuItem>
+    <MenuItem>
+      <FilterLink filter="SHOW_COMPLETED">
+        Completed
+      </FilterLink>
+    </MenuItem>
   </IconMenu>
 );
 

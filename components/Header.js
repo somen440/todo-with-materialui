@@ -1,6 +1,6 @@
 import React from 'react'
 import AppBar from 'material-ui/AppBar'
-import HeaderIcon from '../containers/HeaderIcon'
+import HeaderIcon from './HeaderIcon'
 
 const Header = () => (
   <AppBar

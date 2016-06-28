@@ -15,7 +15,8 @@ let AddTodo = ({ dispatch }) => {
         floatingLabelText="What Task?"
         onKeyDown={e => {
           if (e.keyCode === KEY_ENTER) {
-            dispatch(addTodo("テキトウ"))
+            dispatch(addTodo(e.target.value))
+            e.target.value = ""
           }
         }}
       />
